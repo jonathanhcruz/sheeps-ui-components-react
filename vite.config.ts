@@ -1,12 +1,18 @@
 import path from 'path'
 import { defineConfig } from 'vitest/config'
 import react from '@vitejs/plugin-react-swc'
+import sass from 'sass'
 
 
 export default defineConfig({
+  resolve: {
+    alias: {
+      src: path.resolve('src/'),
+    },
+  },
   build: {
     lib: {
-      entry: path.resolve(__dirname, 'src/main.ts'),
+      entry: path.resolve(__dirname, '/src/index.ts'),
       name: 'My Component',
       fileName: (format) => `sheep-ui-components.${format}.ts`
     },
@@ -30,5 +36,12 @@ export default defineConfig({
       exclude: ['**/node_modules/**']
     },
   },
-  plugins: [react()]
+  plugins: [react()],
+  css: {
+    preprocessorOptions: {
+      scss: {
+        implementation: sass,
+      },
+    },
+  },
 })

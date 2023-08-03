@@ -1,4 +1,6 @@
 import type { StorybookConfig } from "@storybook/react-vite";
+import sass from "sass";
+
 const config: StorybookConfig = {
   stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
   addons: [
@@ -6,6 +8,16 @@ const config: StorybookConfig = {
     "@storybook/addon-essentials",
     "@storybook/addon-onboarding",
     "@storybook/addon-interactions",
+    '@storybook/addon-essentials',
+    {
+      name: '@storybook/addon-styling',
+      options: {
+        sass: {
+          implementation: sass,
+        },
+      },
+    },
+
   ],
   framework: {
     name: "@storybook/react-vite",

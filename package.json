@@ -2,7 +2,7 @@
   "name": "sheeps-ui-components-rc",
   "private": false,
   "description": "This project is created with the intention of improving the speed and standardization of personal web projects.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "tags": [
     "react",
     "typescript",

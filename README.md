@@ -1,4 +1,4 @@
-# Templete package
+# sheeps-ui-components-react
 
 This project was created with the intention of simplifying the creation of personal projects and practicing new concepts.
 

@@ -1,0 +1,1 @@
+export { CustomeImg } from './CustomeImg/CustomeImg';

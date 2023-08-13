@@ -1,5 +1,5 @@
-// Atoms
-export * from './atoms';
+// Basic
+export * from './basic';
 
 // Cards
 export * from './cards';

@@ -12,37 +12,60 @@
         margin-bottom: 0.5rem;
     }
 
-    &__input {
-        padding: 0.5rem;
-        border: 1px solid #3783c5;
-        border-radius: 5px;
-        font-size: 1rem;
-        margin-bottom: 0.5rem;
+    &__container{
+        width: 100%;
+        position: relative;
 
-        &:focus {
-            outline: none;
+        
+        input :not(input[type="checkbox"]) {
+            width: 100%;
+            padding: 0.5rem;
             border: 1px solid #3783c5;
-            box-shadow: 0 0 5px #3783c5;
-        }
-    }
-
-    &__textarea {
-        padding: 0.5rem;
-        border: 1px solid #3783c5;
-        border-radius: 5px;
-        font-size: 1rem;
-        margin-bottom: 0.5rem;
-        max-height: 200px;
-        min-height: 100px;
-
-        &:focus {
-            outline: none;
-            border: 1px solid #3783c5;
-            box-shadow: 0 0 5px #3783c5;
+            border-radius: 5px;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+    
+            &:focus {
+                outline: none;
+                border: 1px solid #3783c5;
+                box-shadow: 0 0 5px #3783c5;
+            }
         }
 
-        &.resize-none {
-            resize: none !important;
+        input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+    
+        &--textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #3783c5;
+            border-radius: 5px;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            max-height: 200px;
+            min-height: 100px;
+    
+            &:focus {
+                outline: none;
+                border: 1px solid #3783c5;
+                box-shadow: 0 0 5px #3783c5;
+            }
+    
+            &.resize-none {
+                resize: none !important;
+            }
+        }
+
+        .sh-status-icon {
+            position: absolute;
+            right: 10px;
+            top: 40%;
+            transform: translateY(-50%);
+            font-size: 1.5rem;
+            color: #3783c5;
         }
     }
 

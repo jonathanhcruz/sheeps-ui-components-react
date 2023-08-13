@@ -7,5 +7,6 @@ export interface CustomInputProps {
     errorMessage?: string,
     isRequired?: boolean,
     noRisize?: boolean,
+    done?: boolean,
     handleChangeValue: (event: string) => void;
 }

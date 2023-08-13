@@ -15,6 +15,7 @@ const meta = {
     errorMessage: '',
     isRequired: false,
     noRisize: false,
+    done: true,
     handleChangeValue: () => {},
   },
   tags: ['autodocs'],
@@ -37,15 +38,18 @@ export const CheckBox: Story = {
     },
   },
 };
+
 export const Input: Story = {
   args: {
     label: 'Email',
     type: 'email',
     placeholder: 'Enter your email',
     className: '',
+    error: true,
     errorMessage: 'The email is not valid.',
     isRequired: false,
     noRisize: true,
+    done: true,
     handleChangeValue: (value: string) => {
       console.log(value);
     },

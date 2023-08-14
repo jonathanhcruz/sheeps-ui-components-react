@@ -2,7 +2,7 @@ import { BlogCardsProps } from './models/BlogCardsProps'
 import './bloCards.scss'
 
 // components
-import { CustomeImg } from 'src'
+import { CustomImg } from 'src'
 
 export const BlogCards = ({
     imageUrl,
@@ -17,7 +17,7 @@ export const BlogCards = ({
        <section className='sh__blogcard'>
             <div className='sh__blogcard__container'>
                 <div className='sh__blogcard__container__image '>
-                    <CustomeImg imageUrl={imageUrl} alt={imageDescription} imgZoom={imgZoom} imageResoursSizes={imageResoursSizes}/> 
+                    <CustomImg imageUrl={imageUrl} alt={imageDescription} imgZoom={imgZoom} imageResoursSizes={imageResoursSizes}/> 
                 </div>
                 <article className='sh__blogcard__container__description'>
                     <h4 className='title'>{title}</h4>

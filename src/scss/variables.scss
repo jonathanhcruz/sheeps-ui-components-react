@@ -1,13 +1,21 @@
-$primary: #1D594E;
-$secundary: #F2CB05;
-$tertiary: #F29F05;
-$fourth: #F28705;
-$fifth: #F23030;
+$primary-color: #1D594E;
+$secundary-color: #F2CB05;
+$tertiary-color: #F29F05;
+$fourth-color: #F28705;
+$fifth-color: #F23030;
 
 
-$errorBackground: #F8D7DA;
-$errorText: #BA0B36;
+$error-background: #F8D7DA;
+$error-text: #BA0B36;
 
-$imputlabel: #3783c5;
+$warning-background: #FFF3CD;
+$warning-text: #856404;
+
+$success-background: #D4EDDA;
+$success-text: #155724;
+
+$imput-label: #3783c5;
 
 $white: #fff;
+
+@import './animations.scss'

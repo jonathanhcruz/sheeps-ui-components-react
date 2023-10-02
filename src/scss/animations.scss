@@ -1,0 +1,30 @@
+// keyframes
+@keyframes fade-in {
+    0% {
+        display: none !important;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none !important;
+    }
+}
+
+// classes for animations
+.animation-fade-in {
+    animation: fade-in 0.5s ease-in-out;
+}
+
+.animation-fade-out {
+    animation: fade-out 0.5s ease-out forwards;
+
+}

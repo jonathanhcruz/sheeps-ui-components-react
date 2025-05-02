@@ -1,0 +1,5 @@
+version: 1
+templates:
+  - name: "Feature Template"
+    description: "Usa esta plantilla para nuevas características."
+    path: ./default_template.md

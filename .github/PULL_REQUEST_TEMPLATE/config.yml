@@ -1,8 +1,0 @@
-version: 1
-templates:
-  - name: "Feature Template"
-    description: "Usa esta plantilla para nuevas características."
-    path: feature_template.md
-  - name: "Bugfix Template"
-    description: "Usa esta plantilla para correcciones de errores."
-    path: bugfix_template.md
